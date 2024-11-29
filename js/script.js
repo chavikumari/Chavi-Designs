@@ -1,37 +1,5 @@
 const accordionDataList = [
-    [
-        {
-          question: "Print Materials",
-          answer: `
-            <ul>
-              <li>Flyers</li>
-              <li>Brochures</li>
-              <li>Posters</li>
-            </ul>
-            <p><strong>Investment:</strong> ₹4,999</p>
-          `,
-        },
-        {
-          question: "Social Media Designs",
-          answer: `
-            <ul>
-              <li>Social Media Templates (More Post & Story)</li>
-              <li>Instagram Highlights Cover</li>
-            </ul>
-            <p><strong>Investment:</strong> ₹4,999</p>
-          `,
-        },
-        {
-          question: "Stationery Set",
-          answer: `
-            <ul>
-              <li>Business Cards</li>
-              <li>Thank You Cards</li>
-            </ul>
-            <p><strong>Investment:</strong> ₹2,999</p>
-          `,
-        },
-      ],
+   
     [
         {
           question: "What's Included?",
@@ -146,7 +114,39 @@ const accordionDataList = [
         question: "Investment",
         answer: `<p>₹14,999</p>`,
       },
-    ]
+    ], [
+      {
+        question: "Print Materials",
+        answer: `
+          <ul>
+            <li>Flyers</li>
+            <li>Brochures</li>
+            <li>Posters</li>
+          </ul>
+          <p><strong>Investment:</strong> ₹4,999</p>
+        `,
+      },
+      {
+        question: "Social Media Designs",
+        answer: `
+          <ul>
+            <li>Social Media Templates (More Post & Story)</li>
+            <li>Instagram Highlights Cover</li>
+          </ul>
+          <p><strong>Investment:</strong> ₹4,999</p>
+        `,
+      },
+      {
+        question: "Stationery Set",
+        answer: `
+          <ul>
+            <li>Business Cards</li>
+            <li>Thank You Cards</li>
+          </ul>
+          <p><strong>Investment:</strong> ₹2,999</p>
+        `,
+      },
+    ],
   ];
   
   function createAccordion(containerId, accordionData) {
@@ -204,7 +204,7 @@ const accordionDataList = [
   }
     
 
-createAccordion('accordion1', accordionDataList[3]);
-  createAccordion('accordion2', accordionDataList[2]);
-  createAccordion('accordion3', accordionDataList[1]);
-  createAccordion('accordion4', accordionDataList[0]);
+createAccordion('accordion1', accordionDataList[1]);
+  createAccordion('accordion2', accordionDataList[0]);
+  createAccordion('accordion3', accordionDataList[2]);
+  createAccordion('accordion4', accordionDataList[3]);
