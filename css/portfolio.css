@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+
+
+
+.row{
+    margin: 10%;
+    display: flex;
+}
+
+
+.card{
+    margin: 2%;
+    margin-bottom: 40px;
+    background-color: transparent;
+    position: relative;
+    width: 80%;
+    border: none;
+}
+.card img{
+    width: 100%;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-body{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+}
+.card-title{
+    font-weight: 700;
+}
+
+.card-body img{
+    width: 50px;
+}
+
+.card-text{
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: var(--pink);
+    border-radius: 20px;
+}
+.images{
+    width: auto;
+    margin: 0 10%;
+    margin-bottom: 30px;
+}
+.images img {
+    width: 100%;
+    transition: transform 0.2s ease-in-out forwards; /* Smooth animation */
+    will-change: transform; 
+}
+
+.arrow img:hover {
+    transform: rotate(60deg); /* Rotate smoothly */
+}
+
+
+.card:hover {
+    cursor: pointer;
+}
+.container .icon2 {
+    left: 50px;
+}
+.container .icon9{
+    right: 100px;
+    bottom: -100px;
+}
+@media screen and (max-width:992px) {
+    .port{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .port-col,.card-columns .card{
+        width: 100%;
+    }
+    .card-body{
+        bottom: 40px;
+    }
+}

@@ -1,0 +1,31 @@
+.cdd img{
+    width: 100%;
+}
+
+
+.col-row2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-row2 .cols{
+    width: 23%;
+}
+.cols img{
+    width: 100%;
+}
+
+
+
+
+
+@media screen and  (max-width:992px) {
+    .imagess{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-4,.col-6,.col-8{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

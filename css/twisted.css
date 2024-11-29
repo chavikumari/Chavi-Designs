@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+}
+h1 {
+  font-weight: 800;
+  text-align: center;
+}
+
+.image-card {
+  display: flex;
+  margin: 3% 10%;
+  width: auto;
+}
+
+.image-card img {
+  width: 100%;
+}
+
+.row {
+  margin: 2% 10%;
+}
+.row h3,
+.row p {
+  color: var(--white);
+}
+.row h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.rows {
+  display: flex;
+}
+.color {
+  width: 50%;
+}
+
+.color img {
+  width: 100%;
+}
+
+.imagess img {
+  width: 100%;
+}
+
+.li-color {
+  display: flex;
+}
+.col-box {
+  width: 60%;
+}
+.col-image {
+  width: 40%;
+}
+.col-image img {
+  width: 100%;
+}
+.color-box {
+  display: flex;
+  width: 100%;
+}
+.color img {
+  width: 100%;
+}
+.rows{
+    width: 30%;
+}
+.rows img {
+  width: 100%;
+}
+.coll{
+    width: 70%;
+}
+
+.fleur-rows{
+    width: 100%;
+    display: flex;
+}
+.fleur-rows .color {
+    width: 50%;
+  }
+@media screen and (max-width:768px) {
+    .port-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .port-text div{
+        width: 100%;
+    }
+    .port-text h3,.port-text p{
+        text-align: center;
+    }
+}

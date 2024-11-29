@@ -1,0 +1,145 @@
+.service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8% 8% 4% 8%;
+    padding: 40px 8%;
+    border-radius: 4rem;
+    background-color: var(--pink);
+}
+
+.service-image{
+    width: 40%;
+}
+.col-6{
+    padding: 0;
+    width: 100%;
+}
+.service-image img{
+    width: 100%;
+}
+
+.service-text{
+    width: 50%;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.rev{
+    flex-direction: row-reverse;
+}
+
+.second{
+    margin: 0% 8% 4% 8%;
+    background-color: var(--white);
+}
+.second p,.second h2{
+    color: var(--primary-background);
+}
+.service .btn{
+    margin-top: 20px;
+    padding: 10px 28px;
+    border-radius: 14px;
+    font-size: 1.2rem;
+    background-color: var(--white);
+}
+.first .btn{
+    color: var(--pink);
+}
+.first .btn:hover{
+    color: var(--pink);
+    background-color: var(--white);
+}
+.second .btn{
+    background-color: var(--primary-background);
+    color: var(--white);
+}
+.third{
+    margin: 0% 8% 4% 8%;
+    background-color: var(--lavendar);
+}
+
+.third .btn{
+    background-color: var(--white);
+    color: var(--lavendar);
+}
+
+.fourth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 8% 4% 8%;
+    padding: 40px 8%;
+}
+
+.fifth{
+    background-color: var(--white);
+    border-radius: 5rem;
+    padding: 40px 8%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fifth p, .fifth h2{
+    color: var(--primary-background);
+}
+.fifth h2{
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+
+}
+.process p{
+    text-align: center;
+}
+.process h3{
+    color: var(--primary-background);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.process img{
+    width: 200px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 10px auto;
+}
+
+.contact{
+    background-color: var(--primary-background);
+    margin-bottom: 40px;
+}
+
+.contact h2,.contact p{
+    color: var(--white);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+}
+@media screen and (max-width: 992px){
+    .service{
+        flex-direction: column;
+    }
+    .service-image{
+        width: 100%;
+    }
+    .service-text{
+        width: 100%;
+    }
+    .fourth,.fifth{
+        flex-direction: column;
+    }
+    .process{
+        display: flex;
+        flex-direction: column;
+    }
+    .process .col-3{
+        width: 100%;
+    }
+}

@@ -1,0 +1,114 @@
+h2{
+    font-size: 2rem;
+}
+.about-me{
+    margin: 10% 8% 4% 8%;
+    padding: 40px 8%;
+    border-radius: 4rem;
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-images{
+    width: 40%;
+}
+
+img{
+    width: 100%;
+}
+
+.about-text{
+    width:50%;
+}
+
+.second{
+    position: relative;
+    margin-top: 0%;
+    background-color: var(--white);
+}
+.second p,.second h2{
+    color: var(--primary-background);
+}
+
+.about-heart{
+    position: absolute;
+    top: -150px;
+    right: -50px;
+    transform: rotate(-10deg);
+}
+.about-heart img{
+    width: 200px;
+}
+.about-design{
+    position: relative;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.btn1{
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+
+.about1{
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    transform: rotate(15deg);
+}
+
+.about1 img{
+    width: 200px;
+}
+
+.about2{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    transform: rotate(-15deg);
+}
+
+.about2 img{
+    width: 200px;
+}
+@media screen and (min-width: 992px) {
+    #navbarContent {
+      margin-left: -100px;
+    }
+  }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .about1{
+        left: -20px;
+    }
+    .about2{
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-me{
+        flex-direction: column;
+    }
+    .about-images{
+        width: 100%;
+    }
+    .about-text{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .third p{
+        margin: 10px;
+    }
+    .about1,.about2{
+        display: none;
+    }
+  
+}

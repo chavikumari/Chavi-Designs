@@ -1,0 +1,108 @@
+.accordion-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.accordion-container h2 {
+  margin-bottom: 10px;
+}
+
+.accordion {
+  background-color: transparent;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid var(--white);
+  padding: 8px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  position: relative;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-item .question {
+  font-size: 18px;
+  color: var(--white);
+  margin-right: 10px; /* Add spacing between question and icon */
+}
+
+.accordion-item .icon {
+  position: absolute;
+  right: 10px;
+  font-size: 24px;
+  color: var(--white);
+  transition: transform 0.3s;
+}
+
+.accordion-item .icon.rotate {
+  transform: rotate(45deg);
+}
+
+/* For smooth opening and closing */
+.answer {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease, padding 0.3s ease;
+  font-size: 16px;
+  padding: 0 20px;
+  background-color: var(--white);
+}
+.answer ul {
+    list-style: disc; /* Default bullet style */
+    margin-left: 20px; /* Indent the list */
+    color: white;
+  }
+  
+  .answer ul ul {
+    list-style: circle; /* Sub-list style */
+    margin-left: 20px; /* Additional indent for sub-lists */
+  }
+  
+  .answer p {
+    margin: 10px 0; /* Add space between paragraphs */
+    color: white;
+  }
+  
+.answer.open {
+  min-height: 40px;
+  padding: 10px 20px;
+}
+
+#accordion1 .answer ul, #accordion1 .answer p{
+    color: var(--pink);
+}
+#accordion2 .accordion {
+    background-color: transparent;
+    border-top: 1px solid var(--primary-background);
+    border-bottom: 1px solid var(--primary-background);
+  }
+
+#accordion2 .accordion-item .question {
+    color: var(--primary-background);
+}
+#accordion2 .accordion-item{border-bottom: 1px solid var(--primary-background);}
+
+#accordion2 .icon,#accordion2 .answer ul, #accordion2 .answer p{
+    color: var(--primary-background);
+}
+
+#accordion3 .answer ul, #accordion3 .answer p{
+    color: var(--lavendar);
+}
+
+#accordion4 .answer ul, #accordion4 .answer p{
+    color: var(--primary-background);
+}
